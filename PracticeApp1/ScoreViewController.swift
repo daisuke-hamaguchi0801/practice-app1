@@ -8,14 +8,22 @@
 import UIKit
 
 class ScoreViewController: UIViewController {
-
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    var correctCount = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scoreLabel.text = "\(correctCount)問正解！"
 
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func toTopButtonAction(_ sender: Any) {
+        self.presentingViewController?.presentingViewController?.dismiss(animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 

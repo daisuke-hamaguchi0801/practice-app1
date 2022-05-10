@@ -18,6 +18,7 @@
 		CF64D6A32827F9C100C48620 /* PracticeApp1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6A22827F9C100C48620 /* PracticeApp1UITestsLaunchTests.swift */; };
 		CF64D6B0282959A000C48620 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6AF282959A000C48620 /* QuizViewController.swift */; };
 		CF64D6B228295A5D00C48620 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6B128295A5D00C48620 /* ScoreViewController.swift */; };
+		CF64D6B428295E5A00C48620 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = CF64D6B328295E5A00C48620 /* quiz.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		CF64D6A22827F9C100C48620 /* PracticeApp1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeApp1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CF64D6AF282959A000C48620 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		CF64D6B128295A5D00C48620 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		CF64D6B328295E5A00C48620 /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				CF64D6812827F9C000C48620 /* SceneDelegate.swift */,
 				CF64D6832827F9C000C48620 /* ViewController.swift */,
 				CF64D6852827F9C000C48620 /* Main.storyboard */,
+				CF64D6B328295E5A00C48620 /* quiz.csv */,
 				CF64D6B128295A5D00C48620 /* ScoreViewController.swift */,
 				CF64D6AF282959A000C48620 /* QuizViewController.swift */,
 				CF64D6882827F9C100C48620 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 				CF64D68C2827F9C100C48620 /* LaunchScreen.storyboard in Resources */,
 				CF64D6892827F9C100C48620 /* Assets.xcassets in Resources */,
 				CF64D6872827F9C000C48620 /* Main.storyboard in Resources */,
+				CF64D6B428295E5A00C48620 /* quiz.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
