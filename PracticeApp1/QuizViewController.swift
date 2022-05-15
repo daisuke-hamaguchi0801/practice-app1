@@ -14,16 +14,21 @@ class QuizViewController: UIViewController {
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
     @IBOutlet weak var answerButton4: UIButton!
+    @IBOutlet weak var judgeImageView: UIImageView!
     
     var csvArray : [String] = []
     var quizArray : [String] = []
     var quizCount = 0
     var correctCount = 0
+    var selectLevel = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        csvArray = loadCSV(fileName: "quiz")
+        print("選択したのはレベル\(selectLevel)")
+        
+        csvArray = loadCSV(fileName: "quiz\(selectLevel)")
+        csvArray.shuffle()
         print(csvArray)
         
         quizArray = csvArray[quizCount].components(separatedBy: ",")
@@ -34,6 +39,14 @@ class QuizViewController: UIViewController {
         answerButton3.setTitle(quizArray[4], for: .normal)
         answerButton4.setTitle(quizArray[5], for: .normal)
         
+        answerButton1.layer.borderWidth = 2
+        answerButton1.layer.borderColor = UIColor.black.cgColor
+        answerButton2.layer.borderWidth = 2
+        answerButton2.layer.borderColor = UIColor.black.cgColor
+        answerButton3.layer.borderWidth = 2
+        answerButton3.layer.borderColor = UIColor.black.cgColor
+        answerButton4.layer.borderWidth = 2
+        answerButton4.layer.borderColor = UIColor.black.cgColor
         // Do any additional setup after loading the view.
     }
     
@@ -46,11 +59,25 @@ class QuizViewController: UIViewController {
         if sender.tag == Int(quizArray[1]){
             correctCount += 1
             print("正解")
+            judgeImageView.image = UIImage(named: "correct")
         }else{
             print("不正解")
+            judgeImageView.image = UIImage(named: "incorrect")
         }
         print("スコア：\(correctCount)問正解")
-        nextQuiz()
+        judgeImageView.isHidden = false
+        answerButton1.isEnabled = false
+        answerButton2.isEnabled = false
+        answerButton3.isEnabled = false
+        answerButton4.isEnabled = false
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
+            self.judgeImageView.isHidden = true
+            self.answerButton1.isEnabled = true
+            self.answerButton2.isEnabled = true
+            self.answerButton3.isEnabled = true
+            self.answerButton4.isEnabled = true
+            self.nextQuiz()
+        }
     }
     
     func nextQuiz(){
