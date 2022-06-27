@@ -11,9 +11,16 @@ class SelectLevelViewController: UIViewController {
     @IBOutlet weak var level1Button: UIButton!
     @IBOutlet weak var level2Button: UIButton!
     @IBOutlet weak var level3Button: UIButton!
+    @IBOutlet weak var toggleButton: UIButton!
     
     var selectTag = 0
-
+    var isButtonEnabled = true
+    var level2ButtonColor = UIColor.init()
+    var level3ButtonColor = UIColor.init()
+    
+    var enableButtonTitle = "レベル2,3を活性化"
+    var disableButtonTitle = "レベル2,3非活性化"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -22,8 +29,11 @@ class SelectLevelViewController: UIViewController {
         level1Button.layer.borderColor = UIColor.black.cgColor
         level2Button.layer.borderWidth = 2
         level2Button.layer.borderColor = UIColor.black.cgColor
+        level2ButtonColor = level2Button.backgroundColor!
         level3Button.layer.borderWidth = 2
         level3Button.layer.borderColor = UIColor.black.cgColor
+        level3ButtonColor = level3Button.backgroundColor!
+        toggleButton.setTitle(disableButtonTitle, for: .normal)
         
     }
     
@@ -38,6 +48,20 @@ class SelectLevelViewController: UIViewController {
         performSegue(withIdentifier: "toQuizVC", sender: nil)
     }
 
+    @IBAction func toggleButtonAction(_ sender: Any) {
+            self.isButtonEnabled.toggle()
+            level2Button.isEnabled.toggle()
+            level3Button.isEnabled.toggle()
+        if isButtonEnabled {
+            level2Button.backgroundColor = level2ButtonColor
+            level3Button.backgroundColor = level3ButtonColor
+            toggleButton.setTitle(disableButtonTitle, for: .normal)
+        }else{
+            level2Button.backgroundColor = UIColor.gray
+            level3Button.backgroundColor = UIColor.gray
+            toggleButton.setTitle(enableButtonTitle, for: .normal)
+        }
+    }
     /*
     // MARK: - Navigation
 

@@ -21,9 +21,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>UIUserInterfaceStyle</key>
-	<string>Light</string>
-	<key>CFBundleDisplayName</key>
-	<string>○○クイズ</string>
 </dict>
 </plist>
