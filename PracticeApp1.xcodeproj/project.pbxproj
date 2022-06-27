@@ -16,6 +16,15 @@
 		CF64D6972827F9C100C48620 /* PracticeApp1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6962827F9C100C48620 /* PracticeApp1Tests.swift */; };
 		CF64D6A12827F9C100C48620 /* PracticeApp1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6A02827F9C100C48620 /* PracticeApp1UITests.swift */; };
 		CF64D6A32827F9C100C48620 /* PracticeApp1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6A22827F9C100C48620 /* PracticeApp1UITestsLaunchTests.swift */; };
+		CF64D6B0282959A000C48620 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6AF282959A000C48620 /* QuizViewController.swift */; };
+		CF64D6B228295A5D00C48620 /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6B128295A5D00C48620 /* ScoreViewController.swift */; };
+		CF64D6B428295E5A00C48620 /* quiz1.csv in Resources */ = {isa = PBXBuildFile; fileRef = CF64D6B328295E5A00C48620 /* quiz1.csv */; };
+		CF64D6B8282AB18B00C48620 /* correct.png in Resources */ = {isa = PBXBuildFile; fileRef = CF64D6B6282AB18A00C48620 /* correct.png */; };
+		CF64D6B9282AB18B00C48620 /* incorrect.png in Resources */ = {isa = PBXBuildFile; fileRef = CF64D6B7282AB18A00C48620 /* incorrect.png */; };
+		CF64D6BB2830E53B00C48620 /* SelectLevelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF64D6BA2830E53B00C48620 /* SelectLevelViewController.swift */; };
+		CF64D6BD2830EC5600C48620 /* quiz2.csv in Resources */ = {isa = PBXBuildFile; fileRef = CF64D6BC2830EC5600C48620 /* quiz2.csv */; };
+		CF64D6BF2830EC8C00C48620 /* quiz3.csv in Resources */ = {isa = PBXBuildFile; fileRef = CF64D6BE2830EC8C00C48620 /* quiz3.csv */; };
+		CF64D6C228313AE600C48620 /* launchImageView.png in Resources */ = {isa = PBXBuildFile; fileRef = CF64D6C128313AE600C48620 /* launchImageView.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +58,15 @@
 		CF64D69C2827F9C100C48620 /* PracticeApp1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeApp1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF64D6A02827F9C100C48620 /* PracticeApp1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeApp1UITests.swift; sourceTree = "<group>"; };
 		CF64D6A22827F9C100C48620 /* PracticeApp1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeApp1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF64D6AF282959A000C48620 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		CF64D6B128295A5D00C48620 /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		CF64D6B328295E5A00C48620 /* quiz1.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz1.csv; sourceTree = "<group>"; };
+		CF64D6B6282AB18A00C48620 /* correct.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = correct.png; sourceTree = "<group>"; };
+		CF64D6B7282AB18A00C48620 /* incorrect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = incorrect.png; sourceTree = "<group>"; };
+		CF64D6BA2830E53B00C48620 /* SelectLevelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectLevelViewController.swift; sourceTree = "<group>"; };
+		CF64D6BC2830EC5600C48620 /* quiz2.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz2.csv; sourceTree = "<group>"; };
+		CF64D6BE2830EC8C00C48620 /* quiz3.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz3.csv; sourceTree = "<group>"; };
+		CF64D6C128313AE600C48620 /* launchImageView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launchImageView.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,9 +121,17 @@
 				CF64D6812827F9C000C48620 /* SceneDelegate.swift */,
 				CF64D6832827F9C000C48620 /* ViewController.swift */,
 				CF64D6852827F9C000C48620 /* Main.storyboard */,
+				CF64D6BA2830E53B00C48620 /* SelectLevelViewController.swift */,
+				CF64D6B328295E5A00C48620 /* quiz1.csv */,
+				CF64D6B5282AB18A00C48620 /* image */,
+				CF64D6B128295A5D00C48620 /* ScoreViewController.swift */,
+				CF64D6AF282959A000C48620 /* QuizViewController.swift */,
+				CF64D6BC2830EC5600C48620 /* quiz2.csv */,
+				CF64D6BE2830EC8C00C48620 /* quiz3.csv */,
 				CF64D6882827F9C100C48620 /* Assets.xcassets */,
 				CF64D68A2827F9C100C48620 /* LaunchScreen.storyboard */,
 				CF64D68D2827F9C100C48620 /* Info.plist */,
+				CF64D6C028313AE600C48620 /* launchImage */,
 			);
 			path = PracticeApp1;
 			sourceTree = "<group>";
@@ -125,6 +151,23 @@
 				CF64D6A22827F9C100C48620 /* PracticeApp1UITestsLaunchTests.swift */,
 			);
 			path = PracticeApp1UITests;
+			sourceTree = "<group>";
+		};
+		CF64D6B5282AB18A00C48620 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				CF64D6B6282AB18A00C48620 /* correct.png */,
+				CF64D6B7282AB18A00C48620 /* incorrect.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		CF64D6C028313AE600C48620 /* launchImage */ = {
+			isa = PBXGroup;
+			children = (
+				CF64D6C128313AE600C48620 /* launchImageView.png */,
+			);
+			path = launchImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,9 +274,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF64D6C228313AE600C48620 /* launchImageView.png in Resources */,
+				CF64D6BD2830EC5600C48620 /* quiz2.csv in Resources */,
+				CF64D6B8282AB18B00C48620 /* correct.png in Resources */,
+				CF64D6B9282AB18B00C48620 /* incorrect.png in Resources */,
 				CF64D68C2827F9C100C48620 /* LaunchScreen.storyboard in Resources */,
 				CF64D6892827F9C100C48620 /* Assets.xcassets in Resources */,
 				CF64D6872827F9C000C48620 /* Main.storyboard in Resources */,
+				CF64D6B428295E5A00C48620 /* quiz1.csv in Resources */,
+				CF64D6BF2830EC8C00C48620 /* quiz3.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +309,10 @@
 			files = (
 				CF64D6842827F9C000C48620 /* ViewController.swift in Sources */,
 				CF64D6802827F9C000C48620 /* AppDelegate.swift in Sources */,
+				CF64D6B228295A5D00C48620 /* ScoreViewController.swift in Sources */,
 				CF64D6822827F9C000C48620 /* SceneDelegate.swift in Sources */,
+				CF64D6B0282959A000C48620 /* QuizViewController.swift in Sources */,
+				CF64D6BB2830E53B00C48620 /* SelectLevelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,25 +487,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4AF32G28S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PracticeApp1/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "簡単クイズ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hamaguchi.PracticeApp1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamaguchi.PracticeApp120220519;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -462,25 +520,31 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4AF32G28S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PracticeApp1/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "簡単クイズ";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.hamaguchi.PracticeApp1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hamaguchi.PracticeApp120220519;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -489,8 +553,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4AF32G28S;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -508,8 +574,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4AF32G28S;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				MARKETING_VERSION = 1.0;
@@ -526,8 +594,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4AF32G28S;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamaguchi.PracticeApp1UITests;
@@ -543,8 +613,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G4AF32G28S;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.hamaguchi.PracticeApp1UITests;
