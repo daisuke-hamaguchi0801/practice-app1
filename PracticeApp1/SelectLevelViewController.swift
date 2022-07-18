@@ -12,6 +12,8 @@ class SelectLevelViewController: UIViewController {
     @IBOutlet weak var level2Button: UIButton!
     @IBOutlet weak var level3Button: UIButton!
     @IBOutlet weak var toggleButton: UIButton!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var callAPIButton: UIButton!
     
     var selectTag = 0
     var isButtonEnabled = true
@@ -62,6 +64,26 @@ class SelectLevelViewController: UIViewController {
             toggleButton.setTitle(enableButtonTitle, for: .normal)
         }
     }
+    
+    @IBAction func backButtonAction(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func callAPIButtonAction(_ sender: Any) {
+        let urlString = "https://klnapp.azurewebsites.net/test/"
+        let url = URL(string: urlString)!  //URLを生成
+        let request = URLRequest(url: url)               //Requestを生成
+        let task = URLSession.shared.dataTask(with: request) { (data, response, error) in  //非同期で通信を行う
+            guard let data = data else { return }
+            let apiCallSuccessMessage = NSString(data: data, encoding: String.Encoding.utf8.rawValue)! as String
+            DispatchQueue.main.async {
+                self.callAPIButton.setTitle(apiCallSuccessMessage + "\n" + urlString as String, for: .normal)
+            }
+        }
+ 
+        task.resume()
+    }
+
     /*
     // MARK: - Navigation
 
