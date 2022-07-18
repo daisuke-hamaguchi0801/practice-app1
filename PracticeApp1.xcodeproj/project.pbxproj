@@ -94,9 +94,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF385AE22884D03300915FC6 /* quiz */ = {
+			isa = PBXGroup;
+			children = (
+				CF64D6BC2830EC5600C48620 /* quiz2.csv */,
+				CF64D6BE2830EC8C00C48620 /* quiz3.csv */,
+				CF64D6B328295E5A00C48620 /* quiz1.csv */,
+			);
+			path = quiz;
+			sourceTree = "<group>";
+		};
 		CF64D6732827F9C000C48620 = {
 			isa = PBXGroup;
 			children = (
+				CF385AE22884D03300915FC6 /* quiz */,
 				CF64D67E2827F9C000C48620 /* PracticeApp1 */,
 				CF64D6952827F9C100C48620 /* PracticeApp1Tests */,
 				CF64D69F2827F9C100C48620 /* PracticeApp1UITests */,
@@ -122,12 +133,9 @@
 				CF64D6832827F9C000C48620 /* ViewController.swift */,
 				CF64D6852827F9C000C48620 /* Main.storyboard */,
 				CF64D6BA2830E53B00C48620 /* SelectLevelViewController.swift */,
-				CF64D6B328295E5A00C48620 /* quiz1.csv */,
 				CF64D6B5282AB18A00C48620 /* image */,
 				CF64D6B128295A5D00C48620 /* ScoreViewController.swift */,
 				CF64D6AF282959A000C48620 /* QuizViewController.swift */,
-				CF64D6BC2830EC5600C48620 /* quiz2.csv */,
-				CF64D6BE2830EC8C00C48620 /* quiz3.csv */,
 				CF64D6882827F9C100C48620 /* Assets.xcassets */,
 				CF64D68A2827F9C100C48620 /* LaunchScreen.storyboard */,
 				CF64D68D2827F9C100C48620 /* Info.plist */,
